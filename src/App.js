@@ -7,7 +7,7 @@ function App() {
 
 useEffect(() => {
     try {
-        const url = "http://group5.exceed19.online/front/get_status"
+        const url = "http://ecourse.cpe.ku.ac.th/exceed05/front/get_status"
         fetch(url).then((res_data) => {
             if (res_data.status == 400) {
                 console.log("undefind")
@@ -42,7 +42,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://group5.exceed19.online/front/request", requestOptions)
+fetch("http://ecourse.cpe.ku.ac.th/exceed05/front/request", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
