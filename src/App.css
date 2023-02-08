@@ -1,38 +1,150 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+p{
+  color: black;
+  font-size: 100px;
+  border: 3px black solid;
+  padding: 5rem;
+  margin: 3rem;
+}
+
+p:hover{
+  box-shadow: 10px 10px 10px black;
+
+}
+/* p:hover .btn {
+  opacity: 1;
+} */
+
+
+
+.kitchen{
+  color: black;
+  font-size: 100px;
+  border: 3px black solid;
+  width: 1190px;
+  padding: 4rem;
+  margin: 1rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.kitchen:hover{
+  box-shadow: 10px 10px 10px black;
+
+}
+
+.manualb {
+  position: absolute;
+  left: 90px;
+  font-size: 50px;
+}
+
+.autob {
+  position: absolute;
+  right: 160px;
+  font-size: 50px;
+}
+.rmb{
+  display: flex;
+  gap: 20rem;
+}
+
+.manualk {
+  position: absolute;
+  left: 110px;
+  font-size: 50px;
+}
+
+.autok {
+  position: absolute;
+  right: 160px;
+  font-size: 50px;
+}
+.rmk{
+  display: flex;
+  gap: 66rem;
+}
+
+.manuall {
+  position: absolute;
+  left: 100px;
+  font-size: 50px;
+}
+
+.autol {
+  position: absolute;
+  right: 160px;
+  font-size: 50px;
+}
+.rml{
+  display: flex;
+  gap: 20rem;
+}
+
+/* .tx{
+  left: 10rem;
+} */
+
+.room{
+  display: flex;
+}
+
+body{
+  background-color: antiquewhite;
+  margin-top: 0px;
+}
+
+.btn {
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  /* opacity: 0; */
+  transition: all 0.5s ease-in ;
+}
+
+.Submit{
+  
 }
